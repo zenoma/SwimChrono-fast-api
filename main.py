@@ -28,7 +28,6 @@ class Club(Base):
     # Relación con los usuarios
     users = relationship("User", back_populates="club")
 
-
 class ClubCreate(BaseModel):
     nombre: str
     provincia: str
